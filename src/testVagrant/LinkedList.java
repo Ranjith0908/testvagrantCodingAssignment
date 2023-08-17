@@ -40,24 +40,26 @@ public class LinkedList {
 				head = newNode;
 		}
 	}
-	static void removeDuplicate(Node head)
+	public Node removeDuplicate()
     {
         
         HashSet<String> duplicate = new HashSet<>();
         Node current = head;
         Node previous = null;
         while (current != null) {
-            String current1 = current.val;
+            String current1 = current.data;
             
-            if (duplicate.contains(current1)) {
+            
+			if (duplicate.contains(current1)) 
                 previous.next = current.next;
-            }
+            
             else {
                 duplicate.add(current1);
                 previous = current;
             }
             current = current.next;
         }
+        return head;
     }
 	  
  

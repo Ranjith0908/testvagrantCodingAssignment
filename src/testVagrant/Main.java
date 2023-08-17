@@ -14,7 +14,7 @@ public class Main {
 		test.insertatBeginning("s3");
 		test.insertatBeginning("s4");
 		
-		LinkedList.removeDuplicate();
+		test.removeDuplicate();
 		test.display();
 		
 		
